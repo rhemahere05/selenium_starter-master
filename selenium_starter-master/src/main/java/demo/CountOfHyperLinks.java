@@ -33,13 +33,8 @@ public class CountOfHyperLinks {
 
 
     public  void testCase01() {
-
-
-//    navigate to Url  https://in.bookmyshow.com/explore/home/chennai
         driver.get("https://in.bookmyshow.com/explore/home/chennai");
-//    store all the hyper links in a list  Using Locator "Tag Name" a
         List<WebElement> hyperLinks = driver.findElements(By.tagName("a"));
-//    by using list.size() disply the count result
         System.out.println("Count of hyperLinks"+ hyperLinks.size());
 
     }
